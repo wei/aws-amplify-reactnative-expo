@@ -1,15 +1,28 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-export default function App() {
+import Amplify from 'aws-amplify'
+import config from './aws-exports'
+Amplify.configure(config)
+
+function App() {
+  const [testText, setTestText] = useState('Initial state')
+
+  async function doStuff() {
+    setTestText('Next state')
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>{testText}</Text>
       <StatusBar style="auto" />
+      <Button title="Do Stuff" onPress={doStuff}>Do Stuff</Button>
     </View>
   );
 }
+
+export default App
 
 const styles = StyleSheet.create({
   container: {
