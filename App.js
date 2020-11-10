@@ -1,16 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { withAuthenticator } from 'aws-amplify-react-native'
 
-import Amplify from 'aws-amplify'
+import Amplify, { Auth, Hub } from 'aws-amplify'
 import config from './aws-exports'
 Amplify.configure(config)
 
-export default function App() {
+Hub.listen('auth', console.log)
+
+function App() {
   const [testText, setTestText] = useState('Initial state')
 
   async function doStuff() {
     setTestText('Next state')
+    await Auth.signOut()
   }
 
   return (
@@ -21,6 +25,8 @@ export default function App() {
     </View>
   );
 }
+
+export default withAuthenticator(App)
 
 const styles = StyleSheet.create({
   container: {
