@@ -11,5 +11,18 @@
       "StackId": "arn:aws:cloudformation:us-east-1:531341216129:stack/amplify-weiamplifyreactnativ-template-160718/8a4b7040-2206-11eb-9a05-0afbd365c3b9",
       "AmplifyAppId": "d4w2noxu73n8m"
     }
+  },
+  "novnine": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-weiamplifyreactnativ-novnine-211636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::531341216129:role/amplify-weiamplifyreactnativ-novnine-211636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::531341216129:role/amplify-weiamplifyreactnativ-novnine-211636-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-weiamplifyreactnativ-novnine-211636-deployment",
+      "UnauthRoleName": "amplify-weiamplifyreactnativ-novnine-211636-unauthRole",
+      "StackName": "amplify-weiamplifyreactnativ-novnine-211636",
+      "StackId": "arn:aws:cloudformation:us-east-1:531341216129:stack/amplify-weiamplifyreactnativ-novnine-211636/c397dc90-22fa-11eb-ac62-1298984999a5",
+      "AmplifyAppId": "d4w2noxu73n8m"
+    }
   }
 }
