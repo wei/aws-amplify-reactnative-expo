@@ -8,18 +8,18 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "^5.9.7",
-    "aws-amplify": "^3.3.8",
-    "aws-amplify-react-native": "^4.2.9",
-    "expo": "~39.0.4",
-    "expo-status-bar": "~1.0.2",
+    "@react-native-community/netinfo": "^5.9.9",
+    "aws-amplify": "^3.3.12",
+    "aws-amplify-react-native": "^4.2.10",
+    "expo": "~39.0.5",
+    "expo-status-bar": "~1.0.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
-    "react-native-web": "~0.14.8"
+    "react-native-web": "~0.14.9"
   },
   "devDependencies": {
-    "@babel/core": "~7.12.3"
+    "@babel/core": "~7.12.10"
   },
   "private": true
 }
